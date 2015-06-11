@@ -11,14 +11,14 @@ import org.openqa.selenium.interactions.touch.FlickAction;
 import org.junit.Assert.*;
 
 import com.epam.environment.cucumberTests.FirstTestRunner;
-import com.epam.environment.pageObjects.Page;
+import com.epam.environment.pageObjects.PageFactory;
 import com.epam.environment.pageObjects.SuperHomePage;
 
 import cucumber.api.java.en.*;
 
 public class SuperHomePageSteps {
 	
-	private static SuperHomePage superHomePage = Page.getSuperHomePage();
+	private static SuperHomePage superHomePage = PageFactory.getSuperHomePage();
 	
 	
 	

@@ -18,7 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import com.epam.environment.pageObjects.Page;
+import com.epam.environment.pageObjects.PageFactory;
 
 public class Hooks {
 	
@@ -43,13 +43,13 @@ public class Hooks {
 	
 	@Before
 	public void startTestComplect() {
-		Page.setUpDriver();
+		PageFactory.setUpDriver();
 	}
 	
 	@After
 	public void shutdownTestComplect(Scenario scenario) throws Exception{
-		Page.screenInAfter(scenario);
-		Page.shutDownDriver();
+		PageFactory.screenInAfter(scenario);
+		PageFactory.shutDownDriver();
 	}
 
 

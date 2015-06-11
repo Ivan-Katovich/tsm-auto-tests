@@ -2,6 +2,7 @@ package com.epam.environment.pageObjects;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,11 +15,13 @@ import com.epam.environment.pageObjects.searchGadgetForms.CarHireSearchGadget;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.When;
 
-public class Page {
+public class PageFactory {
 	
 	protected static WebDriver driver;
 	
 	public static void setUpDriver() {
+		String os = System.getProperty("os.name").toLowerCase();
+		System.out.println(" ========= "+os);
 		System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
