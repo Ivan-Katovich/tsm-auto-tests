@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="37.490774">
+<testcase classname="Flights journey" name="Check the ability to find results with Flights search gadget" time="22.945542">
+<system-out><![CDATA[Given I am on SuperHomePage.................................................passed
+When I click on the superHomePageElement 'flightsFormButton'................passed
+And I fill superHomePage form by 'minimumFlightsProfile' profile............passed
+And I click on the superHomePageElement 'flyingSearchButton'................passed
+And I wait for page absolutely load.........................................passed
+Then I am taken to the FlightsResults page..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check SuperHomePage elements" name="Check logo, main menu, main title and SG buttons" time="14.545232">
+<system-out><![CDATA[Given I am on SuperHomePage.................................................passed
+Then the superHomePage element 'mainLogo' is visible........................passed
+And the superHomePage element 'mainMenu' is visible.........................passed
+And the superHomePage element 'mainTitle' has the text 'Leave London behind Where do you want to go today?'.passed
+And the superHomePage element 'holidaysFormButton' has the text 'Holidays'..passed
+And the superHomePage element 'flightsFormButton' has the text 'Flights'....passed
+And the superHomePage element 'carHireFormButton' has the text 'Car Hire'...passed
+And the superHomePage element 'hotelsFormButton' has the text 'Hotels'......passed
+And the superHomePage element 'insuranceFormButton' has the text 'Insurance'.passed
+]]></system-out>
+</testcase>
+</testsuite>
