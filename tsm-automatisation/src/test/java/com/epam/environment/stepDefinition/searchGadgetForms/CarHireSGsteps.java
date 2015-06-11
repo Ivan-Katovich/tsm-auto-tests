@@ -10,6 +10,8 @@ public class CarHireSGsteps {
 	private static CarHireSearchGadget carHireSearchGadget = Page.getCarHireSearchGadget();
 	
 	public CarHireSGsteps(){}
+        
+        //test
 	
 	@When("^I fill pickUpForm with value '(.+)'$")
 	public void fillPickUpForm(String value) {
