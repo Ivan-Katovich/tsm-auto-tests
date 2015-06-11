@@ -1,17 +1,17 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("journeys/carHireJourney.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("journeys/test.feature");
 formatter.feature({
-  "id": "car-hire-journey-journey",
-  "description": "Description: This feature will check Car hire full journey",
-  "name": "Car hire journey journey",
+  "id": "test",
+  "description": "Description: test desc",
+  "name": "test",
   "keyword": "Feature",
   "line": 1
 });
 formatter.before({
-  "duration": 3125887276,
+  "duration": 3358347682,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "car-hire-journey-journey;check-the-ability-to-find-results-with-car-hire-search-gadget",
+  "id": "test;test-scenario",
   "tags": [
     {
       "name": "@second",
@@ -19,7 +19,7 @@ formatter.scenario({
     }
   ],
   "description": "",
-  "name": "Check the ability to find results with Car hire search gadget",
+  "name": "test scenario",
   "keyword": "Scenario",
   "line": 5,
   "type": "scenario"
@@ -30,198 +30,74 @@ formatter.step({
   "line": 6
 });
 formatter.step({
-  "name": "I click on the superHomePageElement \u0027carHireFormButton\u0027",
-  "keyword": "When ",
+  "name": "the superHomePage Title has text \u0027Leave London behind\u0027",
+  "keyword": "Then ",
   "line": 7
 });
 formatter.step({
-  "name": "I fill superHomePage form by \u0027minimumCarHireProfile\u0027 profile",
-  "keyword": "And ",
+  "name": "I open the carHireSearchGadget",
+  "keyword": "When ",
   "line": 8
 });
 formatter.step({
-  "name": "I click on the superHomePageElement \u0027carHireSearchButton\u0027",
-  "keyword": "And ",
+  "name": "I fill pickUpForm with value \u0027Manchester\u0027",
+  "keyword": "When ",
   "line": 9
 });
 formatter.step({
-  "name": "I wait for page absolutely load",
-  "keyword": "And ",
+  "name": "I submit carHireSerchGadget",
+  "keyword": "When ",
   "line": 10
-});
-formatter.step({
-  "name": "I wait for all providers load",
-  "keyword": "And ",
-  "line": 11
-});
-formatter.step({
-  "name": "I am taken to the CarHireResults page",
-  "keyword": "Then ",
-  "line": 12
-});
-formatter.step({
-  "name": "I click on the \u00271\u0027st element of \u0027viewDealButtons\u0027 group",
-  "keyword": "Then ",
-  "line": 13
-});
-formatter.step({
-  "name": "I switch to another handle",
-  "keyword": "When ",
-  "line": 14
-});
-formatter.step({
-  "name": "I am taken to the page contains URL \u0027http://www.sit1.gb.travelsupermarket.com/beta/en-gb/interstitial\u0027",
-  "keyword": "Then ",
-  "line": 16,
-  "comments": [
-    {
-      "value": "#\tAnd I wait for page absolutely load",
-      "line": 15
-    }
-  ]
-});
-formatter.step({
-  "name": "I am automaticaly redirected",
-  "keyword": "When ",
-  "line": 17
-});
-formatter.step({
-  "name": "I am taken to the page contains URL \u0027www.arguscarhire.com/\u0027",
-  "keyword": "Then ",
-  "line": 19,
-  "comments": [
-    {
-      "value": "#\tAnd I wait for page absolutely load",
-      "line": 18
-    }
-  ]
 });
 formatter.match({
   "location": "SuperHomePageSteps.goToSuperHomePage()"
 });
 formatter.result({
-  "duration": 7714456593,
+  "duration": 11057288553,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "carHireFormButton",
-      "offset": 37
+      "val": "Leave London behind",
+      "offset": 34
     }
   ],
-  "location": "SuperHomePageSteps.clickOnSuperHomePageElement(String)"
+  "location": "SuperHomePageSteps.assertTitleText(String)"
 });
 formatter.result({
-  "duration": 271901239,
+  "duration": 110740620,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SuperHomePageSteps.openCarHireSearchGadget()"
+});
+formatter.result({
+  "duration": 77055584,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "minimumCarHireProfile",
+      "val": "Manchester",
       "offset": 30
     }
   ],
-  "location": "SuperHomePageSteps.fillSuperHomePageFormByProfile(String)"
+  "location": "CarHireSGsteps.fillPickUpForm(String)"
 });
 formatter.result({
-  "duration": 4079545814,
+  "duration": 427673844,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "carHireSearchButton",
-      "offset": 37
-    }
-  ],
-  "location": "SuperHomePageSteps.clickOnSuperHomePageElement(String)"
+  "location": "CarHireSGsteps.submitCarHireSG()"
 });
 formatter.result({
-  "duration": 182874759,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PageSteps.waitForPageAbsolutelyLoad()"
-});
-formatter.result({
-  "duration": 3398956866,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ChannelPageSteps.waitForProviders()"
-});
-formatter.result({
-  "duration": 12282959521,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CarHireResultsPageSteps.assertOnCarHirePage()"
-});
-formatter.result({
-  "duration": 18078224,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 16
-    },
-    {
-      "val": "viewDealButtons",
-      "offset": 33
-    }
-  ],
-  "location": "CarHireResultsPageSteps.clickOnCarHireResultsMultiElement(String,String)"
-});
-formatter.result({
-  "duration": 3475391069,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PageSteps.switchHandle()"
-});
-formatter.result({
-  "duration": 41928070,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "http://www.sit1.gb.travelsupermarket.com/beta/en-gb/interstitial",
-      "offset": 37
-    }
-  ],
-  "location": "PageSteps.assertOnPageWithURL(String)"
-});
-formatter.result({
-  "duration": 42813742,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PageSteps.waitForRedirect()"
-});
-formatter.result({
-  "duration": 18703802872,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "www.arguscarhire.com/",
-      "offset": 37
-    }
-  ],
-  "location": "PageSteps.assertOnPageWithURL(String)"
-});
-formatter.result({
-  "duration": 12942098,
+  "duration": 83190711,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1365701623,
+  "duration": 2497704353,
   "status": "passed"
 });
 });

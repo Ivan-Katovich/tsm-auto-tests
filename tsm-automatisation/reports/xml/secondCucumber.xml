@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="54.71724">
-<testcase classname="Car hire journey journey" name="Check the ability to find results with Car hire search gadget" time="54.71724">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.612001">
+<testcase classname="test" name="test scenario" time="17.612001">
 <system-out><![CDATA[Given I am on SuperHomePage.................................................passed
-When I click on the superHomePageElement 'carHireFormButton'................passed
-And I fill superHomePage form by 'minimumCarHireProfile' profile............passed
-And I click on the superHomePageElement 'carHireSearchButton'...............passed
-And I wait for page absolutely load.........................................passed
-And I wait for all providers load...........................................passed
-Then I am taken to the CarHireResults page..................................passed
-Then I click on the '1'st element of 'viewDealButtons' group................passed
-When I switch to another handle.............................................passed
-Then I am taken to the page contains URL 'http://www.sit1.gb.travelsupermarket.com/beta/en-gb/interstitial'.passed
-When I am automaticaly redirected...........................................passed
-Then I am taken to the page contains URL 'www.arguscarhire.com/'............passed
+Then the superHomePage Title has text 'Leave London behind'.................passed
+When I open the carHireSearchGadget.........................................passed
+When I fill pickUpForm with value 'Manchester'..............................passed
+When I submit carHireSerchGadget............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
