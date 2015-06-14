@@ -1,13 +1,13 @@
 package com.epam.environment.stepDefinition.searchGadgetForms;
 
-import com.epam.environment.pageObjects.Page;
+import com.epam.environment.pageObjects.PageFactory;
 import com.epam.environment.pageObjects.searchGadgetForms.CarHireSearchGadget;
 
 import cucumber.api.java.en.When;
 
 public class CarHireSGsteps {
 	
-	private static CarHireSearchGadget carHireSearchGadget = Page.getCarHireSearchGadget();
+	private static CarHireSearchGadget carHireSearchGadget = PageFactory.getCarHireSearchGadget();
 	
 	public CarHireSGsteps(){}
         
