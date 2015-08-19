@@ -17,8 +17,8 @@ public class Browser {
 
     private static void InitDriver(){
 
-        // this address available from TSM infrastructure and Epam
-        //String gridHubUrl = "http://services.ci1-cms.gb.travelsupermarket.com/wd/hub";
+//        // this address available from TSM infrastructure and Epam
+//        //String gridHubUrl = "http://services.ci1-cms.gb.travelsupermarket.com/wd/hub";
 
         // this address available only from TSM infrastructure
         String gridHubUrl = "http://selenium-hub1.inf1.gb.tsm.internal:4444/wd/hub";
@@ -31,11 +31,11 @@ public class Browser {
             e.printStackTrace();
         }
 
-        // 2. local run on windows with Google Chrome
-        //String os = System.getProperty("os.name").toLowerCase();
-        //System.out.println(" ========= "+os);
-        //System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriver.exe");
-        //Driver = new ChromeDriver();
+        //  2. local run on windows with Google Chrome
+//        String os = System.getProperty("os.name").toLowerCase();
+//        System.out.println(" ========= "+os);
+//        System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriver.exe");
+//        Driver = new ChromeDriver();
 
         Driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
