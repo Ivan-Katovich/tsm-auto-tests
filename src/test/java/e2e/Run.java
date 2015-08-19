@@ -12,12 +12,14 @@ import org.junit.runner.RunWith;
 public class Run {
 
     @BeforeClass
-    public static void SetupTest(){
+    public static void SetupTest() {
+        Config.InitParams();
         Browser.Start();
     }
 
     @AfterClass
-    public static void TeardownTest(){
+    public static void TeardownTest() {
         Browser.Close();
     }
+
 }
