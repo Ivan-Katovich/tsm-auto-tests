@@ -1,0 +1,70 @@
+[
+  {
+    "id": "test",
+    "description": "Description: test desc",
+    "name": "test",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "test;test-scenario",
+        "tags": [
+          {
+            "name": "@second",
+            "line": 4
+          }
+        ],
+        "description": "",
+        "name": "test scenario",
+        "keyword": "Scenario",
+        "line": 5,
+        "steps": [
+          {
+            "result": {
+              "duration": 2552621537,
+              "status": "passed"
+            },
+            "name": "I open siteadmin",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "Stepdefs.step1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 174039359,
+              "status": "passed"
+            },
+            "name": "I login with valid credentials",
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "Stepdefs.step2()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3045247186,
+              "status": "passed"
+            },
+            "name": "I should be logged as Administrator",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Administrator",
+                  "offset": 22
+                }
+              ],
+              "location": "Stepdefs.step3(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "e2e/test.feature"
+  }
+]
