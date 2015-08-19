@@ -1,13 +1,4 @@
-tsm-automatisation/.settings/
-tsm-automatisation/.idea/
-tsm-automatisation/target/
-tsm-automatisation/reports/
-tsm-automatisation/surefire/
-tsm-automatisation/src/test/resources/screenshots/
-.classpath
-tsm-automatisation/MoneySuperMarket.iml
-tsm-automatisation/npm-debug.log
-.project
-.metadata/
-Prob/
-.DS_Store
+/.idea/
+*.iml
+/target/
+/lib
