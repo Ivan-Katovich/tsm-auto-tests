@@ -1,7 +1,7 @@
 [
   {
     "id": "aem-cms-login",
-    "description": "As an administrator of AEM CMS\nI should be able to have access to aem cms\nSo I can login on siteadmin with valid credentials",
+    "description": "As an administrator of AEM CMS\r\nI should be able to have access to aem cms\r\nSo I can login on siteadmin with valid credentials",
     "name": "AEM CMS login",
     "keyword": "Feature",
     "line": 1,
@@ -21,7 +21,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1929311343,
+              "duration": 3639552274,
               "status": "passed"
             },
             "name": "I open siteadmin",
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 6953373839,
+              "duration": 295546280,
               "status": "passed"
             },
             "name": "I login with valid credentials",
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 1526394444,
+              "duration": 3205072435,
               "status": "passed"
             },
             "name": "I should be logged as Administrator",

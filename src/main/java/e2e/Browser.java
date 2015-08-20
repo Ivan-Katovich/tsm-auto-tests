@@ -54,15 +54,15 @@ public class Browser {
         }
         switch (os) {
             case "windows":
-                System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "additional_libraries/drivers/windows/chromedriver.exe");
                 System.out.println("Properties for windows was setted !!!");
                 break;
             case "mac":
-                System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "additional_libraries/drivers/mac/chromedriver");
                 System.out.println("Properties for mac was setted !!!");
                 break;
             case "linux":
-                System.setProperty("webdriver.chrome.driver", "additional_libraries/linux/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "additional_libraries/drivers/linux/chromedriver");
                 System.out.println("Properties for linux was setted !!!");
                 break;
             default:
