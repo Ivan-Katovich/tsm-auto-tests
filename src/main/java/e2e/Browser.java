@@ -17,11 +17,11 @@ public class Browser {
 
     private static void InitDriver(){
 
-        //Chrome();
+        Chrome();
 
         //TSMGridFromEpamNetwork();
 
-        TSMGridFromTSMNetwork();
+//        TSMGridFromTSMNetwork();
 
         Driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
@@ -46,13 +46,28 @@ public class Browser {
         if(os.contains("windows")){
             os = "windows";
         }
+        if(os.contains("mac")){
+            os = "mac";
+        }
+        if(os.contains("linux")){
+            os = "linux";
+        }
         switch (os) {
             case "windows":
                 System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriver.exe");
                 System.out.println("Properties for windows was setted !!!");
                 break;
+            case "mac":
+                System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedrivermac");
+                System.out.println("Properties for mac was setted !!!");
+                break;
+            case "linux":
+                System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriverlinux");
+                System.out.println("Properties for linux was setted !!!");
+                break;
             default:
-                System.out.println(" ========= "+os + " ===========");
+                System.out.println("Unknown OS: " + os);
+                System.out.println("Properties for this OS can not be setted !!!");
                 break;
         }
 

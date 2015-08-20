@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="e2e.Run" time="0.543" tests="2" errors="2" skipped="0" failures="0">
+<testsuite name="e2e.Run" time="0.455" tests="2" errors="2" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="c:\Program Files\Java\jdk1.7.0_45\jre\bin"/>
@@ -43,7 +43,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="c:\Program Files\Java\jdk1.7.0_45\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,10 +60,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="e2e.Run" classname="e2e.Run" time="0.543">
-    <error message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;&#10;System info: host: &apos;EPBYMINW4792&apos;, ip: &apos;10.6.205.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException"><![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+  <testcase name="e2e.Run" classname="e2e.Run" time="0.455">
+    <error message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;&#10;System info: host: &apos;EPBYMINW4792&apos;, ip: &apos;10.6.205.32&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException"><![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'EPBYMINW4792', ip: '10.6.205.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+System info: host: 'EPBYMINW4792', ip: '10.6.205.32', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
 Driver info: driver.version: RemoteWebDriver
 	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
 	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:901)
@@ -89,14 +89,15 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
-	at e2e.Browser.InitDriver(Browser.java:29)
-	at e2e.Browser.Start(Browser.java:45)
+	at e2e.Browser.TSMGridFromTSMNetwork(Browser.java:82)
+	at e2e.Browser.InitDriver(Browser.java:24)
+	at e2e.Browser.Start(Browser.java:31)
 	at e2e.Run.SetupTest(Run.java:17)
 ]]></error>
   </testcase>
-  <testcase name="e2e.Run" classname="e2e.Run" time="0.544">
+  <testcase name="e2e.Run" classname="e2e.Run" time="0.456">
     <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at e2e.Browser.Close(Browser.java:49)
+	at e2e.Browser.Close(Browser.java:35)
 	at e2e.Run.TeardownTest(Run.java:22)
 </error>
   </testcase>
