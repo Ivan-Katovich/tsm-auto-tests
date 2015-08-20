@@ -21,7 +21,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1415792193,
+              "duration": 2515762000,
               "status": "passed"
             },
             "name": "I open siteadmin",
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 3884352902,
+              "duration": 225732000,
               "status": "passed"
             },
             "name": "I login with valid credentials",
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 1604089354,
+              "duration": 3555973000,
               "status": "passed"
             },
             "name": "I should be logged as Administrator",
