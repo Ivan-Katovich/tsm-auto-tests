@@ -17,11 +17,11 @@ public class Browser {
 
     private static void InitDriver(){
 
-        //Windows7LocalRunning();
+        //Chrome();
 
-        //TSMGridFromEpamRunning();
+        //TSMGridFromEpamNetwork();
 
-        TSMGridFromTSMRunning();
+        TSMGridFromTSMNetwork();
 
         Driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
@@ -40,16 +40,26 @@ public class Browser {
         Driver.get(url);
     }
 
-    public static void Windows7LocalRunning(){
+    public static void Chrome(){
 
-        // local run on windows with Google Chrome
         String os = System.getProperty("os.name").toLowerCase();
-        System.out.println(" ========= "+os);
-        System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriver.exe");
+        if(os.contains("windows")){
+            os = "windows";
+        }
+        switch (os) {
+            case "windows":
+                System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriver.exe");
+                System.out.println("Properties for windows was setted !!!");
+                break;
+            default:
+                System.out.println(" ========= "+os + " ===========");
+                break;
+        }
+
         Driver = new ChromeDriver();
     }
 
-    public static void TSMGridFromEpamRunning(){
+    public static void TSMGridFromEpamNetwork(){
 
         // this address available from TSM infrastructure and Epam
         String gridHubUrl = "http://services.ci1-cms.gb.travelsupermarket.com/wd/hub";
@@ -62,7 +72,7 @@ public class Browser {
         }
     }
 
-    public static void TSMGridFromTSMRunning(){
+    public static void TSMGridFromTSMNetwork(){
 
         // this address available only from TSM infrastructure
         String gridHubUrl = "http://selenium-hub1.inf1.gb.tsm.internal:4444/wd/hub";
