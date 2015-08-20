@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "id": "aem-cms-login",
+    "description": "As an administrator of AEM CMS\r\nI should be able to have access to aem cms\r\nSo I can login on siteadmin with valid credentials",
+    "name": "AEM CMS login",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "aem-cms-login;aem-cms-login-with-valid-credentials",
+        "tags": [
+          {
+            "name": "@second",
+            "line": 7
+          }
+        ],
+        "description": "",
+        "name": "AEM CMS login with valid credentials",
+        "keyword": "Scenario",
+        "line": 8,
+        "steps": [
+          {
+            "result": {
+              "duration": 43439798081,
+              "status": "passed"
+            },
+            "name": "I open siteadmin",
+            "keyword": "Given ",
+            "line": 9,
+            "match": {
+              "location": "Stepdefs.step1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 30064922593,
+              "status": "failed",
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input#username\"}\n  (Session info: chrome\u003d44.0.2403.155)\n  (Driver info: chromedriver\u003d2.17.340124 (8cdfc496335a58cfb8bdd672c7dce0c23456384b),platform\u003dWindows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 30.04 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027EPBYMINW4792\u0027, ip: \u002710.6.205.32\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.7.0_45\u0027\n*** Element info: {Using\u003dcss selector, value\u003dinput#username}\nSession ID: a9f4181178bc6c1e538e788dbb6d6f55\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{platform\u003dXP, acceptSslCerts\u003dtrue, javascriptEnabled\u003dtrue, browserName\u003dchrome, chrome\u003d{userDataDir\u003dC:\\Users\\Aliaksei_Alioshka@epam.com\\AppData\\Local\\Temp\\scoped_dir6516_30055}, rotatable\u003dfalse, locationContextEnabled\u003dtrue, mobileEmulationEnabled\u003dfalse, version\u003d44.0.2403.155, takesHeapSnapshot\u003dtrue, cssSelectorsEnabled\u003dtrue, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, browserConnectionEnabled\u003dfalse, webStorageEnabled\u003dtrue, nativeEvents\u003dtrue, hasTouchScreen\u003dfalse, applicationCacheEnabled\u003dfalse, takesScreenshot\u003dtrue}]\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:526)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.sendKeys(Unknown Source)\r\n\tat e2e.pages.LoginPage.login(LoginPage.java:18)\r\n\tat e2e.Stepdefs.step2(Stepdefs.java:19)\r\n\tat ✽.When I login with valid credentials(e2e/AEM-CMS-Authorization.feature:10)\r\n"
+            },
+            "name": "I login with valid credentials",
+            "keyword": "When ",
+            "line": 10,
+            "match": {
+              "location": "Stepdefs.step2()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I should be logged as Administrator",
+            "keyword": "Then ",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Administrator",
+                  "offset": 22
+                }
+              ],
+              "location": "Stepdefs.step3(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "e2e/AEM-CMS-Authorization.feature"
+  }
+]
