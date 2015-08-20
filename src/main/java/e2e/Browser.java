@@ -58,7 +58,7 @@ public class Browser {
                 System.out.println("Properties for windows was setted !!!");
                 break;
             case "mac":
-                System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedrivermac");
+                System.setProperty("webdriver.chrome.driver", "additional_libraries/chromedriver");
                 System.out.println("Properties for mac was setted !!!");
                 break;
             case "linux":

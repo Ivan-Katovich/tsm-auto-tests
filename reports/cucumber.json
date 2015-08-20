@@ -1,7 +1,7 @@
 [
   {
     "id": "aem-cms-login",
-    "description": "As an administrator of AEM CMS\r\nI should be able to have access to aem cms\r\nSo I can login on siteadmin with valid credentials",
+    "description": "As an administrator of AEM CMS\nI should be able to have access to aem cms\nSo I can login on siteadmin with valid credentials",
     "name": "AEM CMS login",
     "keyword": "Feature",
     "line": 1,
@@ -21,7 +21,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11692975388,
+              "duration": 20908063000,
               "status": "passed"
             },
             "name": "I open siteadmin",
@@ -33,9 +33,8 @@
           },
           {
             "result": {
-              "duration": 19845953879,
-              "status": "failed",
-              "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:606)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy16.sendKeys(Unknown Source)\r\n\tat e2e.pages.LoginPage.login(LoginPage.java:18)\r\n\tat e2e.Stepdefs.step2(Stepdefs.java:19)\r\n\tat ✽.When I login with valid credentials(e2e/AEM-CMS-Authorization.feature:10)\r\n"
+              "duration": 229531000,
+              "status": "passed"
             },
             "name": "I login with valid credentials",
             "keyword": "When ",
@@ -46,7 +45,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 15133638000,
+              "status": "passed"
             },
             "name": "I should be logged as Administrator",
             "keyword": "Then ",
